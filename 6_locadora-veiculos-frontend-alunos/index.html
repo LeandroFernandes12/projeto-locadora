@@ -74,6 +74,33 @@
         </div>
     </div>
 
+    <!-- Formulário para calcular previsão (visível para todos os perfis) -->
+    <div class="col-md-6" id="secao-calcular">
+        <div class="card h-100">
+            <div class="card-header">
+                <h4 class="mb-0"><i class="bi bi-calculator me-2"></i>Calcular Previsão de Aluguel</h4>
+            </div>
+            <div class="card-body">
+                <form id="calcForm" method="post" action="">
+                    <div class="mb-3">
+                        <label class="form-label">Tipo de Veículo</label>
+                        <select name="tipo_calculo" class="form-select">
+                            <option value="Carro">Carro</option>
+                            <option value="Moto">Moto</option>
+                        </select>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Quantidade de Dias</label>
+                        <input type="number" name="dias_calculo" class="form-control" value="1" min="1">
+                    </div>
+                    <button type="submit" name="calcular" class="btn btn-info w-100">
+                        <i class="bi bi-calculator me-1"></i>Calcular Previsão
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
     <!-- Tabela de Veículos -->
     <div class="row mt-4">
         <div class="col-12">
